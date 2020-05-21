@@ -1,0 +1,92 @@
+<!doctype html>
+
+ <html lang="en">
+
+ <head>
+     <meta charset="utf-8">
+
+     <title>GC Chat UI</title>
+
+     <link rel="stylesheet" href="./bundle.css">
+     
+     <link rel="stylesheet" type="text/css" href="./style.css">
+     
+     <script src="dynamic.js"></script>
+    
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <script src="https://kit.fontawesome.com/efb051aab1.js" crossorigin="anonymous"></script>
+
+ </head>
+
+ <body class="theme-blue">
+     <div id="dobby-chat" class="box-chat shown">
+         <div class="chat_window">
+             <div class="chat_icon">
+                 <svg width="24px" height="24px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>Fill 1</title>
+               <desc>Created with Sketch.</desc>
+               <g id="---" transform="translate(-587.000000, -1072.000000)" fill="#FFFFFF">
+                 <path d="M606,1072 C595.564176,1072 587,1080.56418 587,1091 C587,1094.4442 587.928625,1097.7971 589.689539,1100.73045 L587,1110 L596.269551,1107.31046 C599.202898,1109.07137 602.555805,1110 606,1110 C616.435824,1110 625,1101.43582 625,1091 C625,1080.56418 616.435824,1072 606,1072" id="Fill-1" transform="translate(606.000000, 1091.000000) scale(1, -1) rotate(270.000000) translate(-606.000000, -1091.000000) "></path>
+               </g>
+             </svg>
+             </div>
+             <p>Live chat</p>
+         </div>
+         <div class="box-head"><span>How can we help?<sup>Beta</sup></span><i class="far max-min fa-window-maximize"></i><i class="fas fa-palette"></i><i class="icon-close material-icons" id="close_chat">arrow_forward</i></div>
+         
+         <div id="chat-conversation" class="box-conversation">
+            
+             <p data-ui-name="Assistant 07/05/2020, 19:27:37" class="msg-box-response">Welcome to Drafty. Our agents are incredibly busy. I’m Drafty’s chat helper and I’ll do what I can to help you today. In order to keep your personal data safe, please do not share your full debit card number, your bank account number, date
+                 of birth or any details of your medical conditions.</p>
+             <ul class="suggestion-card">
+                 <li>Select your query from the list below</li>
+                 <li data-value=" Can’t make payment using my card"> Can’t make payment using my card</li>
+                 <li data-value=" Increase my credit line/Give me extra credit"> Increase my credit line/Give me extra credit</li>
+                 <li data-value=" Update my details"> Update my details</li>
+                 <li data-value=" I am facing financial difficulties"> I am facing financial difficulties</li>
+                 <li data-value=" I want to make a complaint/Status of complaint"> I want to make a complaint/Status of complaint</li>
+                 <li data-value=" Something else"> Something else</li>
+             </ul>
+             <p data-ui-name="Sudhir 07/05/2020, 19:27:56" class="msg-box-input">hello</p>
+             <p data-ui-name="Assistant 07/05/2020, 19:27:58" class="msg-box-response">Hi there!</p>
+             <ul class="suggestion-card">
+                 <li>Select your query from the list below</li>
+                 <li data-value=" Can’t make payment using my card"> Can’t make payment using my card</li>
+                 <li data-value=" Increase my credit line/Give me extra credit"> Increase my credit line/Give me extra credit</li>
+                 <li data-value=" Update my details"> Update my details</li>
+                 <li data-value=" I am facing financial difficulties"> I am facing financial difficulties</li>
+                 <li data-value=" I want to make a complaint/Status of complaint"> I want to make a complaint/Status of complaint</li>
+                 <li data-value=" Something else"> Something else</li>
+             </ul>
+             <p data-ui-name="Sudhir 07/05/2020, 19:28:03" class="msg-box-input"> Something else</p>
+             <p data-ui-name="Assistant 07/05/2020, 19:28:04" class="msg-box-response">Select your query from the list below or type your query </p>
+             <p data-ui-name="Sudhir 07/05/2020, 19:28:20" class="msg-box-input"> Status of my bank transfer</p>
+             <p data-ui-name="Assistant 07/05/2020, 19:28:21" class="msg-box-response">It takes around 7-10 days for any bank transfers to reflect on your Drafty account. We may continue to send you payment reminders in this period. Please ignore them. Rest assured that we will adjust any additional interest accrued due to this
+                 delay in updating the account.</p>
+             <p data-ui-name="Assistant 07/05/2020, 19:28:21" class="msg-box-response">Did I answer your question? </p>
+             <div class="card-wrap">
+                 <div class="tap-button" data-value="Yes">Yes</div>
+                 <div class="tap-button" data-value="No">No</div>
+             </div>
+
+             <p data-ui-name="Assistant 07/05/2020, 19:28:21" class="msg-box-response">Do you want to create Intent? </p>
+             <div class="card-wrap">
+                 <div class="tap-button" data-value="Yes" onclick="createIntentTab()">Yes</div>
+                 <div class="tap-button" data-value="No">No</div>
+             </div>
+             
+
+
+
+
+         </div>
+         <form id="chatform" autocomplete="off">
+             <input id="wisdom" class="chat-input" placeholder="Start typing here..." size="80" type="text" autocomplete="off"><i class="material-icons icon-submit" id="send_chat">send</i>
+             <div class="autocomplete-suggestions " style="display: none;"></div>
+         </form>
+     </div>
+     <script src="index.js"></script>
+ </body>
+
+ </html> 

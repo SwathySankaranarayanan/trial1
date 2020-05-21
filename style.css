@@ -1,0 +1,280 @@
+
+
+/* tab*/
+
+.box-chat .tab_container,
+.slot_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ width:80%;
+  font-size: 15px;
+  margin: 20px auto;
+  background: #FFF;
+  box-shadow: 2px 2px 6px #a5a5a5; }
+  .slot_container{
+     width:98%;
+  }
+
+  .box-chat .tab-content,
+  .box-chat .slot-content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+overflow: hidden;
+}
+
+
+.box-chat .tab_container .card-wrap,
+ .slot_container .card-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+  }
+/* Style the tab */
+.tab_container .tab,
+.slot_container .slot  
+{
+  overflow: hidden;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab_container  .tab button ,
+.slot_container  .slot input[type="button"]{
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab_container  .tab button:hover ,
+.slot_container  .slot input[type="button"]:hover{
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab_container  .tab button.active ,
+.slot_container  .slot input[type="button"].active{
+  background-color: #ccc;
+
+  box-shadow: inset 0 3px #0CE;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+
+/* Style the tab content */
+.tab_container  .tab-content,
+.slot_container  .slot-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Style the tab content */
+
+.box-chat .tab-content input 
+.slot-content input{
+    padding-top: 5px;
+    display: block; }
+
+
+/*form box submit button*/
+
+
+ 
+/*form-style*/
+
+
+.tab-content label,
+.slot-content label{
+    font-weight: bolder;
+}
+
+
+.tab-content .ut-elements,
+.tab-content .cp-elements
+{
+  display: flex;
+  flex-direction: row;
+
+padding:10px;
+    margin:10px;
+
+}
+.tab-content .ut-elements span{
+  text-align: center;
+  width:10%;
+}
+
+
+.tab-content .rc-header
+{
+  display: flex;
+  justify-content:space-between;
+    border:0.5px solid black;
+    background:#E6E4E4;
+    padding:10px;
+    margin:10px;
+}
+
+
+.tab-content .rc-header label{
+    font-weight: bold;
+    text-align: center;
+    
+   padding:10px;
+    margin:10px;
+    
+}
+
+
+.tab-content .rc-elements
+{
+    display:flex;
+    justify-content:space-between;
+    
+    padding:10px;
+    margin:10px;
+}
+
+.tab-content .rc-elements input[type="text"]
+{
+    
+    border: 1.5px solid #ccc;
+    
+}
+
+/*now change*/
+
+.tab-content .sl-elements span
+{
+  width:20%;
+  text-align: center;
+}
+
+.tab-content .rc-elements input[type="text"]
+{
+  width:80%;
+}
+
+.tab-content .rc-elements span,
+.tab-content .rc-header span
+{
+  width:25%;
+  text-align: center;
+}
+
+/*till this*/
+
+ .tab-content .form-field input[type="text"]{
+    
+    
+    margin: 0 0 15px;
+    padding: 7px;
+    border: 1.5px solid #ccc;
+    background: #fff;
+    resize: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: normal; }
+
+ .tab-content .form-field input[type="text"]:focus
+ {
+    border-color: #00bafa; }
+ .tab-content .form-field input[type="text"]:focus + label[placeholder]:before
+  {
+    color: #00bafa; }
+ .tab-content .form-field input[type="text"]:focus + label[placeholder]:before,
+ .tab-content .form-field input[type="text"]:valid + label[placeholder]:before
+   {
+    transition-duration: .2s;
+    transform: translate(0, -22px) scale(0.9, 0.9); }
+.tab-content .form-field input[type="text"]:invalid + label[placeholder][alt]:before
+  {
+    content: attr(alt); }
+ 
+.tab-content .form-field input[type="text"] + label[placeholder]:before
+ {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 17px;
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+
+
+.slot-content select {
+
+  margin: 0 0 15px;
+    padding: 7px;
+    border: 1.5px solid #ccc;
+    background: #fff;
+  
+  border: 1.5px solid #ccc;
+  cursor: pointer;
+  border-radius: 25px;
+  width:20%;
+  border: 1.5px solid #ccc;
+ 
+  
+
+ 
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Adding transition effect */
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+/* For IE <= 11 */
+.slot-content select::-ms-expand {
+  display: none; 
+}
+.slot-content select:hover,
+.slot-content select:focus {
+  color:#000;
+  background-color: white;
+  border-bottom-color: #DCDCDC;
+}
+
+
+.prompt-box{
+  border:0.5px dotted blue;
+  width:40%;
+
+   padding: 10px;
+}
+
+
+.res-elements{
+  display: flex;
+}
+.res-elements input,
+.res-elements span
+{
+  width:40%;
+}
+
+.res-card{
+  border:0.5px solid black;
+  display:flex;
+  flex-direction:column;
+  padding: 20px;
+  width:80%;
+}
